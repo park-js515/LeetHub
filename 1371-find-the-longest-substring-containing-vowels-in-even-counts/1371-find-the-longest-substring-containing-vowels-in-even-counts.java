@@ -37,7 +37,7 @@ class Solution {
     public int findTheLongestSubstring(String s) {
         init(s);
 
-        System.out.println(Arrays.toString(bitMask));
+        // System.out.println(Arrays.toString(bitMask));
 
         // find min, max index
         int[][] matrix = new int[32][2];
