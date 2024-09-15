@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     private Map<Character, Integer> map;
-    private List<Character> vowel;
+    private Set<Character> vowel;
     private int len;
     private int[] bitMask;
 
@@ -15,7 +15,7 @@ class Solution {
             'u', 4
         );
 
-        this.vowel = new ArrayList<>(map.keySet());
+        this.vowel = new HashSet<>(map.keySet());
         this.len = s.length();
 
         this.bitMask = new int[len];
