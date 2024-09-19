@@ -1,5 +1,7 @@
 import java.util.*;
 
+// matrix[from][to] = calc(matrix[from][i], matrix[i + 1][to], op.get(i)), where from <= i < to
+// use memoization for optimization
 class Solution {
     private int len;
     private List<Integer>[][] matrix;
