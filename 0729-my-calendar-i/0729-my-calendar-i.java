@@ -20,12 +20,7 @@ class MyCalendar {
         boolean result = true;
 
         for (Pair p : list) {
-            if (
-                (p.s <= start  && start < p.e) ||
-                (p.s <= end - 1  && end - 1 < p.e) ||
-                (start <= p.s  && p.s < end) ||
-                (start <= p.e - 1  && p.e - 1 < end)
-                ) {
+            if (p.s < end && start < p.e) {
                 result = false;
                 break;
             }
