@@ -24,7 +24,6 @@ class Solution {
             answer = Math.min(answer, temp);
         }
 
-
         return answer;
     }
 }
