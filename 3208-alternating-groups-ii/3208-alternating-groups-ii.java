@@ -10,7 +10,7 @@ class Solution {
 
         int sum = 0;
         
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k - 1; i++) {
             sum += diff[i];
         }
 
